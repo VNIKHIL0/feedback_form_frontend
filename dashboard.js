@@ -9,7 +9,7 @@ function logout() {
 }
 
 async function loadFeedbacks() {
-  const res = await fetch('http://localhost:5000/api/feedbacks');
+  const res = await fetch('https://feedback-from-backend-h5x3.onrender.com/api/feedbacks');
   const feedbacks = await res.json();
 
   const container = document.getElementById("feedbackList");
