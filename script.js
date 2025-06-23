@@ -8,7 +8,7 @@ form.addEventListener('submit', async (e) => {
   const formData = new FormData(form);
   const data = Object.fromEntries(formData);
 
-  const res = await fetch('http://localhost:5000/api/feedback', {
+  const res = await fetch('https://feedback-from-backend-h5x3.onrender.com/api/feedback', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
@@ -25,7 +25,7 @@ form.addEventListener('submit', async (e) => {
 });
 
 async function loadFeedbacks() {
-  const res = await fetch('http://localhost:5000/api/feedbacks');
+  const res = await fetch('https://feedback-from-backend-h5x3.onrender.com/api/feedbacks');
   const feedbacks = await res.json();
 
   feedbackList.innerHTML = '';
