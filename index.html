@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🗳️ Feedback Form</h2>
+    <form id="feedbackForm">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Your message..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="thankYou" class="hidden">✅ Thank you for your feedback!</div>
+
+    <h3>Admin Feedback View</h3>
+    <div id="feedbackList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
